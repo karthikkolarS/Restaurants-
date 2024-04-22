@@ -14,26 +14,26 @@
             <th>Cuisine</th>
             <th>Rating</th>
         </tr>
-        {% for restaurant in restaurants[:10] %}
+        {% for restaurant in restaurants %}
         <tr>
             <td>{{ restaurant.name }}</td>
-            <td>{{ restaurant.address.firstLine }}</td>
+            <td>{{ restaurant.address }}</td>
             <td>
-                {% if restaurant.cuisineTypes %}
-                {{ restaurant.cuisineTypes[0].name }}
-            {% else %}
-                N/A
-            {% endif %}
-        </td>
-        <td>
-            {% if restaurant.ratings %}
-                {{ restaurant.ratings[0].ratingValue|float }}
-            {% else %}
-                N/A
-            {% endif %}
-        </td>
-    </tr>
-    {% endfor %}
-</table>
+                {% if restaurant.cuisines %}
+                    {{ restaurant.cuisines }}
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+            <td>
+                {% if restaurant.rating %}
+                    {{ restaurant.rating }}
+                {% else %}
+                    N/A
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
