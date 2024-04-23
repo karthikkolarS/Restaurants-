@@ -85,3 +85,18 @@ Contributors:
 - W3 Schools for styling, rendering of the web interface and colour selection
 
 ---
+
+Held back on:
+
+-Headers were a point of concern and learning without which I could not have run past the authentication error 403
+
+---
+
+Possible improvements:
+
+-Search bar to include the search for cuisines and restaurants at different postal codes
+-A drop down filter for postal codes in the UK that helps filtering during search for all postal codes. This would eliminate updating the API at the code level everytime to accesss data for all restaurants
+-Multi page model to include all restaurants with 10 restaurants in each page
+-More interactive UI
+
+---
