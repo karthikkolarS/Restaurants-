@@ -32,11 +32,11 @@ Usage:
 3. Using the Application:
    - Run the application and open the link `http://127.0.0.1:5000/` on your browser.
    - The application will fetch restaurant data based on the provided postal code at the end of the API Url and display it on the webpage.
-   - As a standard, the postal code used is for EC4M7RF(Fleet place house, London)
+   - As a standard, the postal code used is for EC4M7RF, so postal code = EC4M7RF. This can be changed to suit the user requirements by replacing EC4M7RF with other postal codes in United Kingdom.
      ```
-     url = "https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/{postal code}/"
-     postal code = EC4M7RF
+     url = "https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/{postal code}"
      ```
+   - Only United Kingdom postal codes are valid to fetch the data from the API
    - Each restaurant name is clickable. Clicking on a restaurant name will reveal additional details including its rating and address.
 
 ---
